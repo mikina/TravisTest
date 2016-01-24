@@ -1,0 +1,4 @@
+language: swift
+script:
+  xcodebuild -workspace TravisTest.xcworkspace -scheme TravisTest -configuration Debug BUILD_ACTIVE_ARCH=NO -destination 'platform=iphonesimulator,name=iPhone 6'
+  xcodebuild test -workspace TravisTest.xcworkspace -scheme TravisTest -configuration Debug BUILD_ACTIVE_ARCH=NO -destination 'platform=iphonesimulator,name=iPhone 6' | xcpretty -t -c --color
