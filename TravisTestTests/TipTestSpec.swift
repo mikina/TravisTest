@@ -14,7 +14,7 @@ class TipTestSpec: QuickSpec {
       context("calculate tip") {
         it("with all inputs greater than zero") {
           let result = self.calc.calculateTip(100.0, taxPercentage: 0.18, tipPercentage: 0.10)
-          expect(result).to(beCloseTo(8.3))
+          expect(result).to(beCloseTo(8.2))
         }
       }
     }

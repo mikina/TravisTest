@@ -11,4 +11,4 @@ xcode_sdk: iphonesimulator9.2
 
 script:
 # xcodebuild -workspace TravisTest.xcworkspace -list
-- xcodebuild clean build test -workspace TravisTest.xcworkspace -scheme TravisTest clean -configuration Debug BUILD_ACTIVE_ARCH=NO -destination 'platform=iphonesimulator,name=iPhone 6'
+- xcodebuild clean build test -workspace TravisTest.xcworkspace -scheme TravisTest clean -configuration Debug BUILD_ACTIVE_ARCH=NO -destination 'platform=iphonesimulator,name=iPhone 6' | xcpretty -t -c --color
